@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pl">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="referrer" content="no-referrer">
+		<meta name="robots" content="noindex, nofollow">
+		<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'none'; img-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+		<title>Otwórz sesję · Timer Engine</title>
+		<link rel="stylesheet" href="./styles.css">
+		<script type="module" src="./app.js"></script>
+	</head>
+	<body>
+		<header class="header">
+			<a class="brand" href="../" aria-label="Timer Engine">Timer<span>Engine</span><span class="brand-dot" aria-hidden="true"></span></a>
+			<nav aria-label="Language / Język">
+				<button type="button" data-language="pl" aria-pressed="true">PL</button>
+				<button type="button" data-language="en" aria-pressed="false">EN</button>
+			</nav>
+		</header>
+		<main>
+			<div class="session-icon" aria-hidden="true"><span></span><span></span><span></span></div>
+			<p class="eyebrow" data-text="eyebrow">UDOSTĘPNIONA SESJA</p>
+			<h1 data-text="title">Twój plan.&#10;Gotowy do otwarcia.</h1>
+			<p class="intro" data-text="intro">Ktoś udostępnił Ci sesję Timer Engine. Otwórz ją na telefonie z Androidem i sprawdź plan przed zapisaniem.</p>
+			<section id="valid-content" hidden aria-label="Session / Sesja">
+				<a id="open-session" class="primary" data-text="open">Otwórz w Timer Engine</a>
+				<p class="status" data-text="ready">Link jest gotowy do przekazania aplikacji.</p>
+				<div class="steps">
+					<section class="step"><span class="number" aria-hidden="true">01</span><div><h2 data-text="stepOne">Masz już aplikację?</h2><p data-text="stepOneText">Naciśnij przycisk powyżej. Aplikacja sprawdzi sesję i pokaże jej podgląd.</p></div></section>
+					<section class="step"><span class="number" aria-hidden="true">02</span><div><h2 data-text="stepTwo">Pierwszy raz z Timer Engine?</h2><p data-text="stepTwoText">Zainstaluj aplikację z Google Play, a potem wróć do tej wiadomości i ponownie otwórz ten sam link.</p><a class="store" href="https://play.google.com/store/apps/details?id=timer.engine" rel="noreferrer" data-text="install">Przejdź do Google Play</a></div></section>
+				</div>
+				<p class="help" data-text="testAccess">Jeśli aplikacja jest dostępna tylko w testach zamkniętych, Twoje konto Google musi mieć dostęp do testów.</p>
+				<p class="help" data-text="browserHelp">Przycisk nie działa w Messengerze? Otwórz ten sam link w przeglądarce telefonu, np. Chrome, i spróbuj ponownie.</p>
+			</section>
+			<section id="invalid-content" class="error" role="status" hidden>
+				<h2 data-text="invalidTitle">Ten link jest niepełny lub nieprawidłowy.</h2>
+				<p data-text="invalidText">Poproś nadawcę o ponowne udostępnienie sesji z Timer Engine. Skopiuj cały link, razem z częścią po znaku #.</p>
+			</section>
+			<noscript><p class="error" data-text="noscript">Włącz JavaScript, aby sprawdzić link i otworzyć sesję. / Enable JavaScript to check the link and open the session.</p></noscript>
+			<footer><p data-text="privacy">Dane sesji są w linku, a strona nie wysyła ich do serwera. Osoba, której przekażesz pełny link, może odczytać sesję.</p><a href="../" data-text="privacyLink">Polityka prywatności</a></footer>
+		</main>
+	</body>
+</html>
